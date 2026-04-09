@@ -224,6 +224,7 @@ Catatan: main.py harus berjalan terlebih dahulu agar dashboard mendapat data.
 
 ## Struktur Proyek
 
+```bash
 btc-ai-prediction/
 │
 ├── main.py                     # Entry point utama
@@ -265,6 +266,7 @@ btc-ai-prediction/
 │
 ├── models/                     # File model (.keras) tersimpan di sini
 └── logs/                       # Log file
+```
 
 ## Dashboard
 
