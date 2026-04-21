@@ -3,6 +3,7 @@ import glob
 import numpy as np
 import pandas as pd
 import joblib
+import tensorflow as tf
 from datetime import datetime
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
@@ -12,6 +13,11 @@ from app.model.lstm import build_model, get_callbacks, FEATURES
 from app.utils.config import config
 from app.utils.logger import get_logger
 from app.database.models import ModelLogs, Indicators, PriceData
+
+# Batasi penggunaan RAM TensorFlow
+gpus = tf.config.experimental.list_physical_devices('GPU')
+tf.config.threading.set_inter_op_parallelism_threads(1)
+tf.config.threading.set_intra_op_parallelism_threads(1)
 
 log = get_logger(__name__)
 

@@ -12,8 +12,8 @@ class Config:
     DB_PORT     = os.getenv("DB_PORT", "5432")
 
     # ── Telegram ──────────────────────────────────────────
-    TELEGRAM_TOKEN   = os.getenv("TELEGRAM_TOKEN", "")
-    TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "")
+    TELEGRAM_TOKEN   = "8589041737:AAGoG0j70gmnZ-hd9THbX-Tcv82hjgpPHQY"
+    TELEGRAM_CHAT_ID = "1287703560"
 
     # Validasi saat startup
     def validate(self):
